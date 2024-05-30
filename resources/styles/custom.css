@@ -119,3 +119,24 @@
     grid-auto-columns: 100%;
   }
 }
+
+.brand-active .slick-track {
+  animation: rotate 160s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%); /* Adjust for desired scroll amount */
+  }
+}
+
+.caption-list {
+  li {
+    list-style: auto;
+    color: white;
+    margin-bottom: 10px;
+  }
+}

@@ -6,236 +6,9 @@
 >
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style>
-      .LGLeeN-keyboard-shortcuts-view {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-      }
-      .LGLeeN-keyboard-shortcuts-view table,
-      .LGLeeN-keyboard-shortcuts-view tbody,
-      .LGLeeN-keyboard-shortcuts-view td,
-      .LGLeeN-keyboard-shortcuts-view tr {
-        background: inherit;
-        border: none;
-        margin: 0;
-        padding: 0;
-      }
-      .LGLeeN-keyboard-shortcuts-view table {
-        display: table;
-      }
-      .LGLeeN-keyboard-shortcuts-view tr {
-        display: table-row;
-      }
-      .LGLeeN-keyboard-shortcuts-view td {
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        display: table-cell;
-        color: #000;
-        padding: 6px;
-        vertical-align: middle;
-        white-space: nowrap;
-      }
-      .LGLeeN-keyboard-shortcuts-view td:first-child {
-        text-align: end;
-      }
-      .LGLeeN-keyboard-shortcuts-view td kbd {
-        background-color: #e8eaed;
-        border-radius: 2px;
-        border: none;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        color: inherit;
-        display: inline-block;
-        font-family: Google Sans Text, Roboto, Arial, sans-serif;
-        line-height: 16px;
-        margin: 0 2px;
-        min-height: 20px;
-        min-width: 20px;
-        padding: 2px 4px;
-        position: relative;
-        text-align: center;
-      }
-    </style>
-    <style>
-      .gm-control-active > img {
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-        display: none;
-        left: 50%;
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-      }
-      .gm-control-active > img:nth-child(1) {
-        display: block;
-      }
-      .gm-control-active:focus > img:nth-child(1),
-      .gm-control-active:hover > img:nth-child(1),
-      .gm-control-active:active > img:nth-child(1),
-      .gm-control-active:disabled > img:nth-child(1) {
-        display: none;
-      }
-      .gm-control-active:focus > img:nth-child(2),
-      .gm-control-active:hover > img:nth-child(2) {
-        display: block;
-      }
-      .gm-control-active:active > img:nth-child(3) {
-        display: block;
-      }
-      .gm-control-active:disabled > img:nth-child(4) {
-        display: block;
-      }
-      sentinel {
-      }
-    </style>
+
     <link type="text/css" rel="stylesheet" href="../resources/css" />
     <link type="text/css" rel="stylesheet" href="../resources/css(1)" />
-    <style>
-      .gm-ui-hover-effect {
-        opacity: 0.6;
-      }
-      .gm-ui-hover-effect:hover {
-        opacity: 1;
-      }
-      .gm-ui-hover-effect > span {
-        background-color: #000;
-      }
-      @media (forced-colors: active), (prefers-contrast: more) {
-        .gm-ui-hover-effect > span {
-          background-color: ButtonText;
-        }
-      }
-      sentinel {
-      }
-    </style>
-    <style>
-      .gm-style .gm-style-cc a,
-      .gm-style .gm-style-cc button,
-      .gm-style .gm-style-cc span,
-      .gm-style .gm-style-mtc div {
-        font-size: 10px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-      .gm-style .gm-style-cc a,
-      .gm-style .gm-style-cc button,
-      .gm-style .gm-style-cc span {
-        outline-offset: 3px;
-      }
-      sentinel {
-      }
-    </style>
-    <style>
-      @media print {
-        .gm-style .gmnoprint,
-        .gmnoprint {
-          display: none;
-        }
-      }
-      @media screen {
-        .gm-style .gmnoscreen,
-        .gmnoscreen {
-          display: none;
-        }
-      }
-    </style>
-    <style>
-      .dismissButton {
-        background-color: #fff;
-        border: 1px solid #dadce0;
-        color: #1a73e8;
-        border-radius: 4px;
-        font-family: Roboto, sans-serif;
-        font-size: 14px;
-        height: 36px;
-        cursor: pointer;
-        padding: 0 24px;
-      }
-      .dismissButton:hover {
-        background-color: rgba(66, 133, 244, 0.04);
-        border: 1px solid #d2e3fc;
-      }
-      .dismissButton:focus {
-        background-color: rgba(66, 133, 244, 0.12);
-        border: 1px solid #d2e3fc;
-        outline: 0;
-      }
-      .dismissButton:focus:not(:focus-visible) {
-        background-color: #fff;
-        border: 1px solid #dadce0;
-        outline: none;
-      }
-      .dismissButton:focus-visible {
-        background-color: rgba(66, 133, 244, 0.12);
-        border: 1px solid #d2e3fc;
-        outline: 0;
-      }
-      .dismissButton:hover:focus {
-        background-color: rgba(66, 133, 244, 0.16);
-        border: 1px solid #d2e2fd;
-      }
-      .dismissButton:hover:focus:not(:focus-visible) {
-        background-color: rgba(66, 133, 244, 0.04);
-        border: 1px solid #d2e3fc;
-      }
-      .dismissButton:hover:focus-visible {
-        background-color: rgba(66, 133, 244, 0.16);
-        border: 1px solid #d2e2fd;
-      }
-      .dismissButton:active {
-        background-color: rgba(66, 133, 244, 0.16);
-        border: 1px solid #d2e2fd;
-        -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-          0 1px 3px 1px rgba(60, 64, 67, 0.15);
-        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-          0 1px 3px 1px rgba(60, 64, 67, 0.15);
-      }
-      .dismissButton:disabled {
-        background-color: #fff;
-        border: 1px solid #f1f3f4;
-        color: #3c4043;
-      }
-      sentinel {
-      }
-    </style>
-    <style>
-      .gm-style-moc {
-        background-color: rgba(0, 0, 0, 0.45);
-        pointer-events: none;
-        text-align: center;
-        -webkit-transition: opacity ease-in-out;
-        transition: opacity ease-in-out;
-      }
-      .gm-style-mot {
-        color: white;
-        font-family: Roboto, Arial, sans-serif;
-        font-size: 22px;
-        margin: 0;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-      }
-      sentinel {
-      }
-    </style>
-    <style>
-      .gm-style img {
-        max-width: none;
-      }
-      .gm-style {
-        font: 400 11px Roboto, Arial, sans-serif;
-        text-decoration: none;
-      }
-    </style>
-
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Event | Template</title>
     <meta name="description" content="" />
@@ -245,7 +18,10 @@
       type="image/x-icon"
       href="assets/img/icon/favicon.png"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="../resources/bootstrap.min.css" />
     <link rel="stylesheet" href="../resources/owl.carousel.min.css" />
     <link rel="stylesheet" href="../resources/slicknav.css" />
@@ -266,11 +42,7 @@
       charset="UTF-8"
       src="../resources/util.js.download"
     ></script>
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="../resources/map.js.download"
-    ></script>
+
     <script
       type="text/javascript"
       charset="UTF-8"
@@ -286,6 +58,7 @@
       charset="UTF-8"
       src="../resources/controls.js.download"
     ></script>
+    <link rel="stylesheet" href="./resources/styles/custom.css" />
   </head>
   <body class="body-bg" style="overflow: visible">
     <header>
@@ -368,7 +141,6 @@
                       role="button"
                       tabindex="0"
                       class="slicknav_btn slicknav_collapsed"
-                      style=""
                       ><span class="slicknav_menutxt">MENU</span
                       ><span class="slicknav_icon"
                         ><span class="slicknav_icon-bar"></span
@@ -513,20 +285,6 @@
                 novalidate="novalidate"
               >
                 <div class="row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control w-100"
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="9"
-                        onfocus="this.placeholder = &#39;&#39;"
-                        onblur="this.placeholder = &#39;Enter Message&#39;"
-                        placeholder=" Enter Message"
-                      ></textarea>
-                    </div>
-                  </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <input
@@ -534,8 +292,6 @@
                         name="name"
                         id="name"
                         type="text"
-                        onfocus="this.placeholder = &#39;&#39;"
-                        onblur="this.placeholder = &#39;Enter your name&#39;"
                         placeholder="Enter your name"
                       />
                     </div>
@@ -547,8 +303,6 @@
                         name="email"
                         id="email"
                         type="email"
-                        onfocus="this.placeholder = &#39;&#39;"
-                        onblur="this.placeholder = &#39;Enter email address&#39;"
                         placeholder="Email"
                       />
                     </div>
@@ -560,11 +314,21 @@
                         name="subject"
                         id="subject"
                         type="text"
-                        onfocus="this.placeholder = &#39;&#39;"
-                        onblur="this.placeholder = &#39;Enter Subject&#39;"
                         placeholder="Enter Subject"
                       />
                     </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control w-100"
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="9"
+                      placeholder=" Enter Message"
+                    ></textarea>
                   </div>
                 </div>
                 <div class="form-group mt-3">
@@ -578,8 +342,8 @@
               <div class="media contact-info">
                 <span class="contact-info__icon"><i class="ti-home"></i></span>
                 <div class="media-body">
-                  <h3>Buttonwood, California.</h3>
-                  <p>Rosemead, CA 91770</p>
+                  <h3>200 Apple Mill Road</h3>
+                  <p>Vaughan, ON L4K 4Z4</p>
                 </div>
               </div>
               <div class="media contact-info">
@@ -588,7 +352,7 @@
                 ></span>
                 <div class="media-body">
                   <h3>+1 253 565 2365</h3>
-                  <p>Mon to Fri 9am to 6pm</p>
+                  <!-- <p>Mon to Fri 9am to 6pm</p> -->
                 </div>
               </div>
               <div class="media contact-info">
@@ -794,7 +558,7 @@
     <script src="../resources/jquery.counterup.min.js.download"></script>
     <script src="../resources/waypoints.min.js.download"></script>
 
-    <script src="../resources/js"></script>
+    <!-- <script src="../resources/js"></script> -->
 
     <script src="../resources/contact.js.download"></script>
     <script src="../resources/jquery.form.js.download"></script>
@@ -806,21 +570,7 @@
     <script src="../resources/main.js.download"></script>
 
     <script async="" src="../resources/js(1)"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-23581568-13");
-    </script>
-    <script
-      defer=""
-      src="../resources/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387"
-      integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ=="
-      data-cf-beacon='{"rayId":"884b1a0a6a859e49","version":"2024.4.1","token":"cd0b4b3a733644fc843ef0b185f98241"}'
-      crossorigin="anonymous"
-    ></script>
+    <script src="./resources/javascript/custom.js"></script>
   </body>
 </html>

@@ -105,3 +105,16 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuElements = document.querySelectorAll('.slicknav_menu');
+    console.log(menuElements)
+  
+    // Check if there are at least two menus (needed for targeting the second)
+    if (menuElements.length >= 2) {
+      const secondMenu = menuElements[1]; // Get the second element
+  
+      // Remove the second menu
+      secondMenu.parentNode.removeChild(secondMenu);
+    }
+  });
+  

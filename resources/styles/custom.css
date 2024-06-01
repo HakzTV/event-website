@@ -140,3 +140,21 @@
     margin-bottom: 10px;
   }
 }
+
+.slicknav_menu {
+  background: transparent !important;
+}
+
+.slicknav_nav {
+  background-color: #b50000 !important ;
+}
+
+.mobile_menu {
+  top: 11px;
+}
+
+@media (max-width: 575px) {
+  .slider-area .hero-caption {
+    display: none;
+  }
+}
